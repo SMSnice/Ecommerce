@@ -1,0 +1,38 @@
+[
+    {
+        "id":"1",
+        "nombre":"Galletitas Oreo",
+        "categoria":"Galletitas Dulce",
+        "precio":"1500",
+        "descripcion": "Galletitas Oreo sabor chocolate y crema. Paquete de 15 unidades",
+        "stock":"15",
+        "imagen":"oreo.png"
+    },
+    {
+        "id":"2",
+        "nombre":"Galletitas Pepas",
+        "categoria":"Galletitas Dulce",
+        "precio":"850",
+        "descripcion": "Galletitas pepas sabor membrillo. Paquete de 10 unidades",
+        "stock":"10",
+        "imagen":"pepas.png"
+    },
+    {
+        "id":"3",
+        "nombre":"Galletitas Chips de chocolate",
+        "categoria":"Galletitas Dulce",
+        "precio":"2000",
+        "descripcion": "Galletitas con chips de chocolate. Paquete de 20 unidades",
+        "stock":"8",
+        "imagen":"chipschoco.png"
+    },
+    {
+        "id":"4",
+        "nombre":"Galletitas de jamon y queso",
+        "categoria":"Galletitas Saladas",
+        "precio":"2500",
+        "descripcion": "Galletitas sabor jamon y queso. Paquete de 10 unidades",
+        "stock":"12",
+        "imagen":"jamonyqueso.png"
+    }
+]
