@@ -6,7 +6,7 @@ const bbdd = [
         "precio":"1500",
         "descripcion": "Galletitas Oreo sabor chocolate y crema. Paquete de 15 unidades",
         "stock":"15",
-        "imagen":"oreo2.png"
+        "imagen":"../imagenes/oreo2.png"
     },
     {
         "id":"7",
