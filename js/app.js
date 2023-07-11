@@ -6,7 +6,7 @@ const bbdd = [
         "precio":"1500",
         "descripcion": "Galletitas Oreo sabor chocolate y crema. Paquete de 15 unidades",
         "stock":"15",
-        "imagen":"../imagenes/oreo2.png"
+        "imagen":"../imagenes/oreo2.PNG"
     },
     {
         "id":"7",
@@ -15,7 +15,7 @@ const bbdd = [
         "precio":"2900",
         "descripcion": "Galletitas sabor aceituna. Paquete de 10 unidades",
         "stock":"10",
-        "imagen":"aceituna.png"
+        "imagen":"../imagenes/aceituna.PNG"
     },
     {
         "id":"8",
@@ -24,7 +24,7 @@ const bbdd = [
         "precio":"2850",
         "descripcion": "Galletitas sabor oregano y queso. Paquete de 8 unidades",
         "stock":"20",
-        "imagen":"oreganoyqueso.png"
+        "imagen":"../imagenes/oreganoyqueso.PNG"
     },
     
     {
@@ -34,7 +34,7 @@ const bbdd = [
         "precio":"2500",
         "descripcion": "Galletitas sabor vainilla con pasas de uva. Paquete de 10 unidades",
         "stock":"12",
-        "imagen":"pasas.png"
+        "imagen":"../imagenes/pasas.PNG"
     },
     {
         "id":"5",
@@ -43,7 +43,7 @@ const bbdd = [
         "precio":"2350",
         "descripcion": "Galletitas sabor zanahoria. Paquete de 10 unidades",
         "stock":"15",
-        "imagen":"zanahoria.png"
+        "imagen":"../imagenes/zanahoria.PNG"
     },
     {
         "id":"6",
@@ -52,7 +52,7 @@ const bbdd = [
         "precio":"2700",
         "descripcion": "Galletitas sabor queso y almendras. Paquete de 10 unidades",
         "stock":"13",
-        "imagen":"quesoyalmen.png"
+        "imagen":"../imagenes/quesoyalmen.PNG"
     },
 
     {
@@ -62,7 +62,7 @@ const bbdd = [
         "precio":"850",
         "descripcion": "Galletitas pepas sabor membrillo. Paquete de 10 unidades",
         "stock":"10",
-        "imagen":"pepas2.png"
+        "imagen":"../imagenes/pepas2.PNG"
     },
     
     {
@@ -72,7 +72,7 @@ const bbdd = [
         "precio":"2000",
         "descripcion": "Galletitas con chips de chocolate. Paquete de 20 unidades",
         "stock":"8",
-        "imagen":"chipschoco4.png"
+        "imagen":"../imagenes/chipschoco4.PNG"
     },
     
 ]
