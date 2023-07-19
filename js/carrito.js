@@ -6,7 +6,7 @@ const btnComprar = document.querySelector('#btnComprar');
 
 /* OBTENGO LOS PRODUCTOS DEL CARRITO */
 let carrito = JSON.parse(localStorage.getItem("carritoLocal")) || [];
-
+let btnPlus;
 function armarEstructuraCarrito (contenedor, carritoProductos){
     carritoProductos.forEach(producto => {
         contenedor.innerHTML += `
@@ -17,16 +17,58 @@ function armarEstructuraCarrito (contenedor, carritoProductos){
             <h5 class="card-title">${producto.nombre}</h5>
             <p class="card-text">Precio:$${producto.precio}</p>
             <p class="card-text">Cantidad: ${producto.cantidad}</p>
-            <p class="card-text">Subtotal: $${producto.subtotal}</p>
+            <p class="card-text">Cantidad: <span data-id="${producto.id}" class="spanPlus">+</span> <span class="spanCantidad">${producto.cantidad}</span> <span data-id="${producto.id}" class="spanMinor">-</span> </p>
+            <p class="card-text">Subtotal: $<span class="spanSubtotal">${producto.subtotal}</span></p>
             <a class="btn-quitar btn btn-danger mt-3" id="${producto.id}"  href="#">Quitar</a>
           </div>
         </div>
       </div>
         `;
-    
+
+
+
     })
 
-    
+    const btnPlus = document.querySelectorAll('.spanPlus');
+    const btnMinor = document.querySelectorAll('.spanMinor');
+    let cantidad = 0;
+    btnPlus.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        let producto = arrayProductos.find((el) => el.id === e.target.dataset.id);
+        if(producto.verificarStock(parseInt(e.target.nextElementSibling.textContent) + 1)){
+          cantidad = parseInt(e.target.nextElementSibling.textContent) + 1;
+          e.target.nextElementSibling.textContent = cantidad;
+          let spanSubtotal = e.target.parentNode.parentNode.querySelector('.spanSubtotal');
+          let total = parseFloat(spanTotal.textContent) - parseFloat(spanSubtotal.textContent);
+          spanSubtotal.textContent = cantidad * producto.precio;
+          total += parseFloat(spanSubtotal.textContent);
+          console.log(total);
+          spanTotal.textContent = total;
+
+        }else{
+          alert('Ha superado el stock disponible');
+        }
+       
+      })
+    });
+
+    btnMinor.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        if(parseInt(e.target.previousElementSibling.textContent) - 1 > 0){
+          let producto = arrayProductos.find((el) => el.id === e.target.dataset.id);
+          cantidad = parseInt(e.target.previousElementSibling.textContent) - 1;
+          e.target.previousElementSibling.textContent = cantidad;
+          let spanSubtotal = e.target.parentNode.parentNode.querySelector('.spanSubtotal');
+          let total = parseFloat(spanTotal.textContent) - parseFloat(spanSubtotal.textContent);
+          spanSubtotal.textContent = cantidad * producto.precio;
+          total += parseFloat(spanSubtotal.textContent);
+          console.log(total);
+          spanTotal.textContent = total;
+        }
+        
+      });
+    });
+
     const btnQuitar = document.querySelectorAll('.btn-quitar');
     btnQuitar.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -90,4 +132,3 @@ btnComprar.addEventListener('click', (e) => {
 })
 
 
-//

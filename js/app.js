@@ -2,9 +2,9 @@ const bbdd = [
     {
         "id":"1",
         "nombre":"Galletitas Oreo",
-        "categoria":"Galletitas Dulce",
+        "categoria":"Galletitas dulces",
         "precio":"1500",
-        "descripcion": "Galletitas Oreo sabor chocolate y crema. Paquete de 15 unidades",
+        "descripcion": "Galletitas sabor oreo. Paquete de 15 unidades",
         "stock":"15",
         "imagen":"../imagenes/oreo2.PNG"
     },
@@ -19,20 +19,20 @@ const bbdd = [
     },
     {
         "id":"8",
-        "nombre":"Galletitas de oregano y queso",
+        "nombre":"Galletitas integrales",
         "categoria":"Galletitas saladas",
         "precio":"2850",
-        "descripcion": "Galletitas sabor oregano y queso. Paquete de 8 unidades",
+        "descripcion": "Galletitas sabor integrales. Paquete de 8 unidades",
         "stock":"20",
-        "imagen":"../imagenes/oreganoyqueso.PNG"
+        "imagen":"../imagenes/integrales.PNG"
     },
     
     {
         "id":"4",
-        "nombre":"Galletitas de vainilla con pasas de uva",
+        "nombre":"Galletitas con pasas",
         "categoria":"Galletitas dulces",
         "precio":"2500",
-        "descripcion": "Galletitas sabor vainilla con pasas de uva. Paquete de 10 unidades",
+        "descripcion": "Galletitas sabor con pasas. Paquete de 10 unidades",
         "stock":"12",
         "imagen":"../imagenes/pasas.PNG"
     },
@@ -47,10 +47,10 @@ const bbdd = [
     },
     {
         "id":"6",
-        "nombre":"Galletitas de queso y almendras",
+        "nombre":"Galletitas de queso",
         "categoria":"Galletitas saladas",
         "precio":"2700",
-        "descripcion": "Galletitas sabor queso y almendras. Paquete de 10 unidades",
+        "descripcion": "Galletitas sabor queso. Paquete de 10 unidades",
         "stock":"13",
         "imagen":"../imagenes/quesoyalmen.PNG"
     },
@@ -58,7 +58,7 @@ const bbdd = [
     {
         "id":"2",
         "nombre":"Galletitas Pepas",
-        "categoria":"Galletitas Dulce",
+        "categoria":"Galletitas dulces",
         "precio":"850",
         "descripcion": "Galletitas pepas sabor membrillo. Paquete de 10 unidades",
         "stock":"10",
@@ -67,14 +67,13 @@ const bbdd = [
     
     {
         "id":"3",
-        "nombre":"Galletitas Chips de chocolate",
-        "categoria":"Galletitas Dulce",
+        "nombre":"Galletitas Chips chocolate",
+        "categoria":"Galletitas dulces",
         "precio":"2000",
         "descripcion": "Galletitas con chips de chocolate. Paquete de 20 unidades",
         "stock":"8",
-        "imagen":"../imagenes/chipschoco4.PNG"
+        "imagen":"../imagenes/chipschoco5.PNG"
     },
-    
 ]
 
 class Galletitas {
