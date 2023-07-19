@@ -8,7 +8,7 @@
     <meta name="description" content="MayoGalle, Mayorista de Galletitas Artesanales."/>
     <meta name="keywords" content="Galletitas, artesanales, dulces, productos caseros, merienda"/>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="../icono/favicon.jpg" type="image/x-icon" /> 
+    <link rel="shortcut icon" href="../icono/galleicono.PNG" type="image/x-icon" /> 
     <!-- Fontawesome -->
     <link
       rel="stylesheet"
@@ -26,6 +26,11 @@
       integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
       crossorigin="anonymous"
     />
+
+    <!-- Mail -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+
+
     <!-- Estilos  -->
     <link rel="stylesheet" href="../css/style.css" />
       <title>MayoGalle - Formulario de contacto</title>
@@ -60,7 +65,6 @@
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="contacto.html">Contacto</a>
               </li>
-              <li class="nav-item">
             </ul>
           </div>
           </div>
@@ -77,38 +81,32 @@
                     <div class="form-items">
                         <h3>Contáctenos</h3>
                         <p>Por favor complete el siguiente formulario</p>
-                        <form class="requires-validation" novalidate>
+                        <!-- ele -->
+                        <form id="myForm" class="requires-validation" novalidate>
                             <div class="col-md-12">
-                               <input class="form-control" type="nombreCompleto" name="nombreCompleto" placeholder="Nombre y Apellido" required>
+                               <input class="form-control mb-3" type="nombreCompleto" name="nombreCompleto" placeholder="Nombre y Apellido" required>
                             </div>
                             
                             <div class="col-md-12">
-                              <input class="form-control" type="E-mail" name="E-mail" placeholder="email" required>
+                              <input class="form-control" type="E-mail" name="E-mail" placeholder="Email" required>
                            </div>
 
-                           <div class="col-md-12">
-                              <p></p> 
-                              <input class="form-control" type="comentario" name="comentario" placeholder="Ingrese su comentario" required>
+                           <div class="col-md-12 my-3">
+                             
+                        
+                              <textarea name="" class="form-control" rows="4" placeholder="Comentario"></textarea>
                             </div>
 
-                            <div class="col-md-12 mt-3">
-                            <label class="mb-3 mr-1" for="gender">Género: </label>
-
-                            <input type="radio" class="btn-check" name="Género" id="Masculino" autocomplete="off" required>
-                            <label class="btn btn-sm btn-outline-secondary" for="Masculino">Masculino</label>
-
-                            <input type="radio" class="btn-check" name="Género" id="Femenino" autocomplete="off" required>
-                            <label class="btn btn-sm btn-outline-secondary" for="Femenino">Femenino</label>
-                            </div>
+                     
 
                             <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
-                            <label class="form-check-label">Yo confirmo que toda la información es correcta<label>
+                            <input class="form-check-input" type="checkbox" value="" id="terminos" required>
+                            <label for="terminos" class="form-check-label">Acepto los términos y condiciones<label>
                             </div>
                   
 
                             <div class="form-button mt-3">
-                                  <button id="submit" type="submit" class="btn btn-primary">Enter</button>
+                                  <button id="submit" type="submit" class="btn btn-primary">Enviar</button>
                             </div>
                         </form>
                     </div>
@@ -134,6 +132,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
 </script>
+
+<script src="../js/email.js"></script>
   
 </div>
 </body>
