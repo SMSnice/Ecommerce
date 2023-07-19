@@ -50,25 +50,7 @@ main .qSomos, main .calidadLema {
   width: 100%;
   animation: typewriter 2s steps(44) 1s 1 normal both, blinkTextCursor 270ms steps(44) infinite normal;
 }
-/*
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-*/
-/*
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}*/
+
 main .qSomos .headline .description, main .calidadLema .headline .description {
   color: #828282;
   text-align: left;
@@ -88,25 +70,7 @@ main .invitacion {
   margin-right: auto;
   width: 100%;
 }
-/*
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}*/
-/*
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-*/
+
 main {
   margin-left: 25px;
   margin-right: 30px;
@@ -458,4 +422,4 @@ header {
   overflow: hidden;
 }
 
-/*# sourceMappingURL=style.css.map */
+
